@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Último Refúgio</title>
+    <style>
+        :root {
+            --ouro: #FFD700;
+            --vermelho: #8B0000;
+            --fundo: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: white;
+            background: url('https://i.imgur.com/V2uJN8l.jpeg') fixed;
+            min-height: 100vh;
+        }
+
+        /* Menu */
+        .navbar {
+            background: rgba(0,0,0,0.9);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 0.95em;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--ouro);
+        }
+
+        /* Conteúdo */
+        .container {
+            max-width: 800px;
+            margin: 80px auto 30px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: var(--ouro);
+            text-shadow: 2px 2px 4px black;
+        }
+
+        /* Botões */
+        .botoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        .botao {
+            background: linear-gradient(145deg, #FF4500, #8B0000);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 0.9em;
+            border: 2px solid var(--ouro);
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .botao:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+        }
+
+        .preco {
+            display: block;
+            color: var(--ouro);
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="regras.html" class="nav-link">📜 Regras</a>
+        <a href="doacoes.html" class="nav-link">💎 Doações</a>
+    </nav>
+
+    <div class="container">
+        <h1>BEM-VINDO AO ÚLTIMO REFÚGIO</h1>
+        
+        <div class="botoes">
+            <a href="regras.html" class="botao">
+                📜 Regras Completas
+                <span class="preco">Saiba Mais</span>
+            </a>
+            
+            <a href="doacoes.html" class="botao">
+                💰 Tornar-se VIP
+                <span class="preco">Vantagens Exclusivas</span>
+            </a>
+            
+            <a href="SEU_LINK_DISCORD" class="botao">
+                🎧 Entrar no Discord
+                <span class="preco">Comunidade Ativa</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
